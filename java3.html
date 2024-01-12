@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .pge {
+            width: 80%;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+            margin: 40px 100px;
+        }
+
+        input {
+            display: block;
+            margin: 40px 450px;
+            text-align: center;
+            /* width: 200px; */
+            height: 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .fa-user {
+            position: absolute;
+            top: 34%;
+            left: 43%;
+        }
+
+        .fa-lock {
+            position: absolute;
+            top: 56%;
+            left: 43%;
+        }
+
+        .fa-eye {
+            position: absolute;
+            top: 56%;
+            left: 55%;
+        }
+
+        .fa-eye-slash {
+            position: absolute;
+            top: 56%;
+            left: 55%;
+            display: none;
+        }
+        button{
+            margin: 00px 490px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pge">
+        <form action="">
+            <h1>login</h1>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="username" placeholder="username">
+            <i class="fa-solid fa-lock"></i>
+            <span onclick="test()">
+                <i class="fa-solid fa-eye" id="show"></i>
+                <i class="fa-solid fa-eye-slash" id="hide"></i>
+            </span>
+            <input type="password" id="pass" placeholder="password">
+            <!-- <input type="button" value="submit" id="submit"> -->
+            <button type="button" value="">submit</button>
+        </form>
+    </div>
+    <script>
+        function test() {
+            document.getElementById("pass")
+            if (pass.type === "password") {
+                pass.type = "text"
+                
+            }
+            else {
+                pass.type = "password"
+            }
+        }
+        $("#submit").click(function () {
+            let username = document.getElementById("username").value
+            let password = document.getElementById("pass").value
+            let myusername = "vanshu13@gmail.com"
+            let mypassword = "352002"
+            if (username === myusername && password === mypassword) {
+                swal({
+                    title: "good job",
+                    icon: "success",
+                });
+            }
+            else {
+                swal({
+                    title: "failed",
+                    icon: "error",
+                });
+            }
+        })
+    </script>
+</body>
+
+</html>

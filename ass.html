@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100%;
+            height:700px;
+            background-color: aquamarine;
+            background-image: url(abc/leaf.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+        .nav{
+            width: 100%;
+            height: 50px;
+            /* background-color: blue; */
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        li{
+            margin: 20px;
+            color: aliceblue;
+        }
+        h6{
+            color: aliceblue;
+            text-transform: uppercase;
+            position: absolute;
+            top: 30%;
+            left: 20px;
+            font-size: 20px;
+        }
+        h1{
+            color: aliceblue;
+            position: absolute;
+            top: 40%;
+            left: 30px;
+            text-transform: uppercase;
+            font-size: 60px;
+            background-image: linear-gradient(red,rgb(241, 16, 211),yellow);
+            -webkit-background-clip: text;
+            color: transparent;
+           background-repeat: no-repeat;
+           background-position: -700px;
+           animation-name: test;
+           animation-duration: 5s;
+           animation-iteration-count: infinite;
+        }
+        @keyframes test{
+            100%{
+                 background-position: 0;
+            }
+        }
+        .bubles{
+            position: absolute;
+            bottom: -50px;
+        }
+        .bubles img{
+           
+           margin: 40px;
+          animation-name: bubles;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+        @keyframes bubles{
+            0%{
+               transform: translateY(0);
+            }
+            100%{
+                 transform: translateY(-800px);
+            }
+        }
+        .a{
+            animation-delay: 1.2;
+            width: 50px;
+            
+        }
+        .b{
+            width: 50px;
+          animation-delay: 1.4s;
+        }
+        .c{
+            width: 50px;
+          animation-delay: 1.6s;
+        }
+        .d{
+            width: 50px;
+          animation-delay: 1.8s;
+        }
+        .e{
+            width: 50px;
+          animation-delay: 2s;
+        }
+        .f{
+        width: 50px;
+          animation-delay: 2.2s;
+        }
+        .g{
+            width: 50px;
+          animation-delay: 2.4s;
+        }
+        .h{
+            width: 50px;
+          animation-delay: 2.6s;
+        }
+        .i{
+            width: 50px;
+          animation-delay: 2.8s;
+        }
+        .j{
+            width: 50px;
+          animation-delay: 3s;
+        }
+        .k{
+            width: 50px;
+          animation-delay: 3.2s;
+        }
+        .l{
+            width: 50px;
+          animation-delay: 3.4s;
+        }
+        .m{
+            width: 50px;
+          animation-delay: 3.6s;
+        }
+        .n{
+            width: 50px;
+          animation-delay: 3.8s;
+        }
+        .o{
+            width: 50px;
+          animation-delay: 4s;
+        }
+        .p{
+            width: 50px;
+          animation-delay: 4.2s;
+        }
+        .q{
+            width: 50px;
+          animation-delay: 4.4s;
+        }
+        .r{
+            width: 50px;
+          animation-delay: 4.6s;
+        }
+        .s{
+            width: 50px;
+          animation-delay: 4.8s;
+        }
+        .t{
+            width: 50px;
+          animation-delay: 1.2s;
+        }
+        .u{
+            width: 50px;
+          animation-delay: 3.1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>feedback</li>
+            </ul>
+        </div>
+        <div class="header">
+            <h6>welcome to animation</h6>
+            <h1>hello animations</h1>
+            <div class="bubles">
+                <img class="a" src="abc/pngwing.com.png" alt="">
+                <img class="b" src="abc/pngwing.com.png" alt="">
+                <img class="c" src="abc/pngwing.com.png" alt="">
+                <img class="d" src="abc/pngwing.com.png" alt="">
+                <img class="e" src="abc/pngwing.com.png" alt="">
+                <img class="f" src="abc/pngwing.com.png" alt="">
+                <img class="g" src="abc/pngwing.com.png" alt="">
+                <img class="h" src="abc/pngwing.com.png" alt="">
+                <img class="i" src="abc/pngwing.com.png" alt="">
+                <img class="j" src="abc/pngwing.com.png" alt="">
+                <img class="k" src="abc/pngwing.com.png" alt="">
+                <img class="l" src="abc/pngwing.com.png" alt="">
+                <img  class="m" src="abc/pngwing.com.png" alt="">
+                <img class="n" src="abc/pngwing.com.png" alt="">
+                <img class="o" src="abc/pngwing.com.png" alt="">
+                <img class="p" src="abc/pngwing.com.png" alt="">
+                <img class="q" src="abc/pngwing.com.png" alt="">
+                <img class="r" src="abc/pngwing.com.png" alt="">
+                <img class="s" src="abc/pngwing.com.png" alt="">
+                <img class="t" src="abc/pngwing.com.png" alt="">
+                <img class="u" src="abc/pngwing.com.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
